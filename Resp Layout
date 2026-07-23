@@ -1,0 +1,49 @@
+AIPILite-HA-Voice/
+│
+├── platformio.ini
+├── sdkconfig.defaults
+├── CMakeLists.txt
+├── README.md
+│
+├── include/
+│   pins.h
+│   board_config.h
+│
+├── src/
+│   main.cpp
+│
+├── components/
+│
+│   board/
+│      board.cpp
+│      board.h
+│
+│   display/
+│      display.cpp
+│      display.h
+│
+│   audio/
+│      codec.cpp
+│      codec.h
+│
+│   led/
+│      led.cpp
+│      led.h
+│
+│   button/
+│      button.cpp
+│      button.h
+│
+│   wifi/
+│      wifi.cpp
+│      wifi.h
+│
+│   ota/
+│      ota.cpp
+│      ota.h
+│
+│   ui/
+│      ui.cpp
+│      ui.h
+│
+└── assets/
