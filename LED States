@@ -1,0 +1,7 @@
+| Color  | Meaning          |
+| ------ | ---------------- |
+| Blue   | Booting          |
+| Yellow | Connecting Wi-Fi |
+| Green  | Ready            |
+| Red    | Error            |
+| Purple | OTA Update       |
