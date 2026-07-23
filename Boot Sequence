@@ -1,0 +1,23 @@
+Power On
+     │
+Initialize GPIO
+     │
+Initialize NVS
+     │
+Initialize LED
+     │
+Initialize LCD
+     │
+Turn on Backlight
+     │
+Display Boot Logo
+     │
+Initialize ES8311
+     │
+Initialize I2S
+     │
+Initialize Wi-Fi
+     │
+Start OTA
+     │
+Show Ready Screen
