@@ -1,0 +1,10 @@
+wifi:
+  ssid: "Ha"
+  password: "Comcast12"
+
+  ap:
+    ssid: "AI Pi Lite Fallback"
+
+psram:
+  mode: octal
+  speed: 80MHz
