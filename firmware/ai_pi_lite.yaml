@@ -1,61 +1,19 @@
-esphome:
+substitutions:
   name: ai-pi-lite
   friendly_name: AI Pi Lite
+
+esphome:
+  name: ${name}
+  friendly_name: ${friendly_name}
 
 esp32:
   board: esp32-s3-devkitc-1
   framework:
     type: esp-idf
 
-logger:
-
-api:
-
-ota:
-  platform: esphome
-
-wifi:
-  ssid: "Ha"
-  password: "Comcast12"
-
-  ap:
-    ssid: "AI-Pi-Lite Fallback"
-
-captive_portal:
-
-psram:
-  mode: octal
-  speed: 80MHz
-
-light:
-  - platform: esp32_rmt_led_strip
-    id: rgb_status
-    pin: GPIO46
-    num_leds: 1
-    chipset: WS2812
-    rgb_order: GRB
-    name: "Status LED"
-
-binary_sensor:
-  - platform: gpio
-    pin:
-      number: GPIO42
-      inverted: true
-      mode:
-        input: true
-        pullup: true
-    id: button
-
-    on_press:
-      then:
-        - logger.log: "Button Pressed"
-
-        - light.turn_on:
-            id: rgb_status
-            red: 0%
-            green: 100%
-            blue: 0%
-
-    on_release:
-      then:
-        - light.turn_off: rgb_status
+packages:
+  wifi: !include packages/wifi.yaml
+  logger: !include packages/logger.yaml
+  led: !include packages/led.yaml
+  button: !include packages/button.yaml
+  display: !include packages/display.yaml
