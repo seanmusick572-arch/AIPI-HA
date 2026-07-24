@@ -1,3 +1,23 @@
+spi:
+  clk_pin: GPIO16
+  mosi_pin: GPIO17
+
+output:
+  - platform: ledc
+    pin: GPIO3
+    id: backlight
+
+light:
+  - platform: monochromatic
+    id: lcd_backlight
+    output: backlight
+    restore_mode: ALWAYS_ON
+
+font:
+  - file: "gfonts://Roboto"
+    id: font_small
+    size: 20
+
 display:
   - platform: st7735
     id: lcd
