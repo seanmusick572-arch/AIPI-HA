@@ -1,0 +1,40 @@
+spi:
+  clk_pin: GPIO16
+  mosi_pin: GPIO17
+
+output:
+  - platform: ledc
+    pin: GPIO3
+    id: backlight
+
+light:
+  - platform: monochromatic
+    id: lcd_backlight
+    output: backlight
+    restore_mode: ALWAYS_ON
+
+font:
+  - file: "gfonts://Roboto"
+    id: font_small
+    size: 20
+
+display:
+  - platform: st7735
+
+    model: INITR_BLACKTAB
+
+    cs_pin: GPIO15
+    dc_pin: GPIO7
+    reset_pin: GPIO18
+
+    rotation: 0
+
+    lambda: |-
+      it.fill(Color::BLACK);
+
+      it.print(
+        10,
+        10,
+        id(font_small),
+        Color::WHITE,
+        "AIPI-HA");
