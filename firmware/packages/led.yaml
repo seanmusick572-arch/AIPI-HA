@@ -1,0 +1,13 @@
+light:
+  - platform: esp32_rmt_led_strip
+    chipset: WS2812
+
+    pin: GPIO46
+
+    num_leds: 1
+
+    rgb_order: GRB
+
+    id: rgb_status
+
+    name: Status LED
