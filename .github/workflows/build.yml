@@ -31,10 +31,9 @@ jobs:
         run: |
           esphome compile firmware/ai_pi_lite.yaml
 
-      - name: Upload firmware
-      uses: actions/upload-artifact@v4
-  with:
-    name: AIPI-HA-Firmware
-    path: |
-      firmware/.esphome/build/**/.pioenvs/**/*.bin
-      firmware/.esphome/build/**/*.bin
+      - name: Upload firmware artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: firmware
+          path: |
+            firmware/.esphome/build/**/*
