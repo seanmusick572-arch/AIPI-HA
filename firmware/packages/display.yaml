@@ -21,7 +21,6 @@ display:
       width: 128
       height: 128
 
-    rotation: 90
     invert_colors: true
     auto_clear_enabled: false
     update_interval: never
