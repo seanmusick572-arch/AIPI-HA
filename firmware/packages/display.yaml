@@ -20,14 +20,14 @@ display:
     dimensions:
       width: 128
       height: 128
+      swap_xy: true
 
     invert_colors: false
     auto_clear_enabled: false
     update_interval: never
 
 lvgl:
-  display.set_rotation: 90
-  pages:
+   pages:
     - widgets:
         - obj:
             width: 128
