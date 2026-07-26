@@ -31,13 +31,13 @@ lvgl:
         - obj:
             width: 128
             height: 128
-            rotate: 90
             bg_color: white
             bg_opa: COVER
             widgets:
               - label:
+                  rotate: 90
                   align: CENTER
-                  text: "AIPI-HA"
+                  text: "Sean's Assistant"
                   text_color: black
 
 switch:
