@@ -21,7 +21,7 @@ display:
       width: 128
       height: 128
 
-    invert_colors: true
+    invert_colors: false
     auto_clear_enabled: false
     update_interval: never
 
