@@ -20,8 +20,8 @@ display:
     dimensions:
       width: 128
       height: 128
-      swap_xy: true
-
+      
+    swap_xy: true
     invert_colors: false
     auto_clear_enabled: false
     update_interval: never
