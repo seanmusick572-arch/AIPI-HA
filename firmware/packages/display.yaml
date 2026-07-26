@@ -26,6 +26,7 @@ display:
     update_interval: never
 
 lvgl:
+  display.set_rotation: 90
   pages:
     - widgets:
         - obj:
@@ -35,7 +36,6 @@ lvgl:
             bg_opa: COVER
             widgets:
               - label:
-                  rotate: 90
                   align: CENTER
                   text: "Sean's Assistant"
                   text_color: black
