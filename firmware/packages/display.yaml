@@ -31,6 +31,7 @@ lvgl:
         - obj:
             width: 128
             height: 128
+            rotate: 90
             bg_color: white
             bg_opa: COVER
             widgets:
