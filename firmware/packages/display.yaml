@@ -23,6 +23,7 @@ display:
       
     transform:
       swap_xy: true
+      mirror_y: false
       
     invert_colors: false
     auto_clear_enabled: false
