@@ -23,8 +23,8 @@ display:
       
     transform:
       swap_xy: true
-      mirror_y: false
-      mirror_x: false
+      mirror_y: true
+      mirror_x: true
       
     invert_colors: false
     auto_clear_enabled: false
