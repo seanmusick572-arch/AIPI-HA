@@ -26,12 +26,18 @@ display:
     update_interval: never
 
 lvgl:
-  widgets:
-    - label:
-        align: CENTER
-        text: "AIPI-HA"
-        text_font: font_small
-        text_color: 0xFFFFFF
+  pages:
+    - widgets:
+        - obj:
+            width: 128
+            height: 128
+            bg_color: white
+            bg_opa: COVER
+            widgets:
+              - label:
+                  align: CENTER
+                  text: "AIPI-HA"
+                  text_color: black
 
 switch:
   - platform: gpio
